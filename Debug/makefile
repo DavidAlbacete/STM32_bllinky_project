@@ -40,8 +40,8 @@ blinky.bin \
 all: blinky.elf secondary-outputs
 
 # Tool invocations
-blinky.elf: $(OBJS) $(USER_OBJS) C:\Users\dasba\STM32CubeIDE\workspace_1.2.0\blinky\STM32F446RETX_FLASH.ld
-	arm-none-eabi-gcc -o "blinky.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\dasba\STM32CubeIDE\workspace_1.2.0\blinky\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="blinky.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+blinky.elf: $(OBJS) $(USER_OBJS) C:\Users\dasba\STM32CubeIDE\workspace_1.2.0\blinky\STM32_bllinky_project\STM32F446RETX_FLASH.ld
+	arm-none-eabi-gcc -o "blinky.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\dasba\STM32CubeIDE\workspace_1.2.0\blinky\STM32_bllinky_project\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="blinky.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

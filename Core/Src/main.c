@@ -97,15 +97,11 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  uint8_t i =0;
   while (1)
   {
-	  for(;;)
-	   {
-		  HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_5); // toggle the LED on & off
-		  HAL_Delay(3000);
-	   }
+  i=i+1;
     /* USER CODE END WHILE */
-
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
